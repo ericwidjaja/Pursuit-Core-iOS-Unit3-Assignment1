@@ -10,7 +10,7 @@ import Foundation
 
 struct AppleStock: Codable {
     let date: String
-    let open: String
-    let close: String
+    let open: Double
+    let close: Double
     
 }

@@ -15,6 +15,7 @@
 		577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userinfo.json */; };
 		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
 		DFF600DB2319C4D400859FB4 /* RandomUKUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF600DA2319C4D400859FB4 /* RandomUKUsers.swift */; };
+		DFF600DE2319D89200859FB4 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF600DD2319D89200859FB4 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		577E5BFE21BA8C3B0083EB97 /* userinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
 		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
 		DFF600DA2319C4D400859FB4 /* RandomUKUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUKUsers.swift; sourceTree = "<group>"; };
+		DFF600DD2319D89200859FB4 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactsViewController.swift; path = PeopleAndAppleStockPrices/Controllers/ContactsViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				577E5BED21BA8BA10083EB97 /* ContactsDetailViewController.swift */,
+				DFF600DD2319D89200859FB4 /* ContactsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				577E5BEE21BA8BA10083EB97 /* ContactsDetailViewController.swift in Sources */,
+				DFF600DE2319D89200859FB4 /* ContactsViewController.swift in Sources */,
 				DFF600DB2319C4D400859FB4 /* RandomUKUsers.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,
 			);

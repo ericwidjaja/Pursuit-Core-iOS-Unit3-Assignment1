@@ -9,7 +9,7 @@
 import Foundation
 //MARK-Create Structs from json file.
 struct RandomUKUsers: Codable {
-    let reults: [ContactInfo]
+    let results: [ContactInfo]
 }
 
 struct ContactInfo: Codable {

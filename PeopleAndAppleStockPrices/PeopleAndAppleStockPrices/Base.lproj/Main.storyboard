@@ -9,24 +9,76 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AppleStock View Controller-->
         <scene sceneID="uHT-Sw-fjd">
             <objects>
-                <viewController id="wVD-6p-4g0" sceneMemberID="viewController">
+                <viewController title="AppleStock View Controller" id="wVD-6p-4g0" customClass="AppleStockViewController" customModule="PeopleAndAppleStockPrices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tnq-mQ-DvR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qbz-SN-V5s">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="stockCell" rowHeight="70" id="bdR-LW-t7R">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bdR-LW-t7R" id="ysi-f4-CQt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYB-Yi-ooy">
+                                                    <rect key="frame" x="20" y="21.5" width="52" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="27" id="d00-05-Gde"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="gbB-5i-9Fb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19V-kb-te1">
+                                                    <rect key="frame" x="342" y="22" width="52" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="FI0-Zd-dhE"/>
+                                                        <constraint firstAttribute="height" constant="27" id="SbP-Lu-dly"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hYB-Yi-ooy" firstAttribute="centerY" secondItem="ysi-f4-CQt" secondAttribute="centerY" id="AH5-WH-zFi"/>
+                                                <constraint firstItem="19V-kb-te1" firstAttribute="trailing" secondItem="ysi-f4-CQt" secondAttribute="trailingMargin" id="MSV-B5-yJ4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hYB-Yi-ooy" secondAttribute="trailing" constant="322" id="gng-PS-1fs"/>
+                                                <constraint firstItem="19V-kb-te1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hYB-Yi-ooy" secondAttribute="trailing" constant="8" symbolic="YES" id="nt1-58-1gy"/>
+                                                <constraint firstItem="hYB-Yi-ooy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ysi-f4-CQt" secondAttribute="leading" constant="20" symbolic="YES" id="x8R-jh-BYK"/>
+                                                <constraint firstItem="19V-kb-te1" firstAttribute="top" secondItem="ysi-f4-CQt" secondAttribute="topMargin" constant="11" id="xet-fY-F0t"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qbz-SN-V5s" firstAttribute="leading" secondItem="dNo-Fp-zli" secondAttribute="leading" id="Axv-F8-ACW"/>
+                            <constraint firstItem="dNo-Fp-zli" firstAttribute="bottom" secondItem="Qbz-SN-V5s" secondAttribute="bottom" id="Psr-LW-W2h"/>
+                            <constraint firstItem="dNo-Fp-zli" firstAttribute="trailing" secondItem="Qbz-SN-V5s" secondAttribute="trailing" id="YJu-PS-Ch2"/>
+                            <constraint firstItem="Qbz-SN-V5s" firstAttribute="top" secondItem="dNo-Fp-zli" secondAttribute="top" id="zwM-m8-Gmv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dNo-Fp-zli"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uiM-U0-ija"/>
+                    <navigationItem key="navigationItem" title="AAPL Stock" id="uiM-U0-ija"/>
                     <connections>
                         <segue destination="9Av-h3-6zG" kind="show" id="uGz-b8-B46"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAG-VG-itc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="378"/>
+            <point key="canvasLocation" x="556.52173913043487" y="377.67857142857139"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="Tkc-uy-YHj">

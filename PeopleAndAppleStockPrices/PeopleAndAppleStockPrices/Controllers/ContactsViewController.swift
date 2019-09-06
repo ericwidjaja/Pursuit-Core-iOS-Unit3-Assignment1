@@ -32,6 +32,7 @@ class ContactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         contactsTableView.dataSource = self
+        contactsTableView.delegate = self
         contactsSeachBar.delegate = self
         setupRefreshControl()
         loadData()
@@ -64,6 +65,7 @@ extension ContactsViewController: UITableViewDataSource {
         return contacts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = contactsTableView.dequeueReusableCell(withIdentifier: "contactsCell", for: indexPath)
         sortedRandomUKUsers = contacts.sorted(by: {
             if $0.name.first == $1.name.first {
@@ -85,4 +87,9 @@ extension ContactsViewController: UISearchBarDelegate {
         guard let searchTerm = searchBar.text else { return }
         contacts = contacts.filter{ $0.name.first + " " + $0.name.last == searchTerm.lowercased() || $0.name.first == searchTerm.lowercased() || $0.name.last == searchTerm.lowercased()}
     }
+}
+
+
+extension ContactsViewController: UITableViewDelegate {
+    
 }

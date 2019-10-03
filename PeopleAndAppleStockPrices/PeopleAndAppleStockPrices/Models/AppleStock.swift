@@ -13,4 +13,14 @@ struct AppleStock: Codable {
     let open: Double
     let close: Double
     
+    static func getStock(from data: Data) -> [AppleStock] {
+        do {
+            let stock = try JSONDecoder().decode([AppleStock].self, from: data)
+            return stock
+        } catch let decodeError {
+            fatalError("could not decode info \(decodeError)")
+            
+        }
+    }
+    
 }

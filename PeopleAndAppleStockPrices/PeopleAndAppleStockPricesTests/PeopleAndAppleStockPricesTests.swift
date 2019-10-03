@@ -17,6 +17,28 @@ class PeopleAndAppleStockPricesTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    //MARK: - create func to obtain data from respective json file depending on name as parameter
+    
+    private func getDataFromJSON(name: String) -> Data {
+        guard let pathToData = Bundle.main.path(forResource: name, ofType: "json") else {
+            fatalError("couldn't find JSON file called \(name).json")}
+        
+        let url = URL(fileURLWithPath: pathToData)
+        do {
+            let data = try Data(contentsOf: url)
+            return data
+        } catch let jsonError {
+            fatalError("error")
+        }
+    }
+    
+    func testAppleStockDidLoad() {
+        let data = getDataFromJSON(name: "AppleStock")
+        let newAppleStock = AppleStock.getStock(from: data)
+        
+        
+        XCTAssertTrue(newAppleStock.self != nil, "There was no object")
+    }
 
     func testExample() {
         // This is an example of a functional test case.

@@ -24,6 +24,8 @@ struct AppleStock: Codable {
         
     }
     
+    var 
+    
 }
 
 

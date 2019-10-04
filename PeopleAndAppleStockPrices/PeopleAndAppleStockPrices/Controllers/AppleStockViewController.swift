@@ -10,10 +10,18 @@ import UIKit
 
 class AppleStockViewController: UIViewController {
 
-
-    var twoYearStock: [AppleStock] = []
-
+//    MARK: - Properties
+    var twoYearStock: [AppleStock] = [] {
+        didSet {
+            appleStockTableView.reloadData()
+        }
+    }
     
+    var month = [String]()
+    var stocks = [[AppleStock]]()
+    
+
+//  MARK: - IBOutlet
     @IBOutlet weak var appleStockTableView: UITableView!
     
     override func viewDidLoad() {

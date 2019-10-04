@@ -21,6 +21,17 @@ struct AppleStock: Codable {
             fatalError("could not decode info \(decodeError)")
             
         }
+        
     }
     
 }
+
+
+//TO DO for Sections:
+
+/* Figure out filtering the model by the date
+ maybe use matrix as arrays of array,
+ 
+ create a func to make the avg monthly
+ then, create
+ */

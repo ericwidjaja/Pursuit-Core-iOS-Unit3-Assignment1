@@ -18,6 +18,7 @@
 		DFA3AF9623219E8200AFED02 /* AppleStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA3AF9523219E8200AFED02 /* AppleStockViewController.swift */; };
 		DFA3AF982321ABAE00AFED02 /* AppleStockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA3AF972321ABAE00AFED02 /* AppleStockDetailViewController.swift */; };
 		DFA3AFA02321C38000AFED02 /* PeopleAndAppleStockPricesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA3AF9F2321C38000AFED02 /* PeopleAndAppleStockPricesTests.swift */; };
+		DFF376E7234D156200EBC060 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF376E6234D156200EBC060 /* Extensions.swift */; };
 		DFF600DB2319C4D400859FB4 /* RandomUKUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF600DA2319C4D400859FB4 /* RandomUKUsers.swift */; };
 		DFF600DE2319D89200859FB4 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF600DD2319D89200859FB4 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		DFA3AF9D2321C38000AFED02 /* PeopleAndAppleStockPricesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAndAppleStockPricesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA3AF9F2321C38000AFED02 /* PeopleAndAppleStockPricesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAndAppleStockPricesTests.swift; sourceTree = "<group>"; };
 		DFA3AFA12321C38000AFED02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFF376E6234D156200EBC060 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DFF600DA2319C4D400859FB4 /* RandomUKUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUKUsers.swift; sourceTree = "<group>"; };
 		DFF600DD2319D89200859FB4 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactsViewController.swift; path = PeopleAndAppleStockPrices/Controllers/ContactsViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 			children = (
 				DFF600DA2319C4D400859FB4 /* RandomUKUsers.swift */,
 				DFA3AF9323219B8300AFED02 /* AppleStock.swift */,
+				DFF376E6234D156200EBC060 /* Extensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				DFA3AF982321ABAE00AFED02 /* AppleStockDetailViewController.swift in Sources */,
 				577E5BEE21BA8BA10083EB97 /* ContactsDetailViewController.swift in Sources */,
 				DFF600DE2319D89200859FB4 /* ContactsViewController.swift in Sources */,
+				DFF376E7234D156200EBC060 /* Extensions.swift in Sources */,
 				DFF600DB2319C4D400859FB4 /* RandomUKUsers.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,
 				DFA3AF9623219E8200AFED02 /* AppleStockViewController.swift in Sources */,
@@ -431,7 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.pursuit.PeopleAndAppleStockPrices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.pursuit.PeopleAndAppleStockPrices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

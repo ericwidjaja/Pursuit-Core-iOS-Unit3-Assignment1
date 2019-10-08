@@ -102,7 +102,7 @@ extension AppleStockViewController: UITableViewDataSource {
         }
         let monthlyAverage = String(format: "%.2f", AppleStock.getAveragePriceForMonth(stockArr: stocks))
         
-        return "\(specificSection),                     Avg: $ \(monthlyAverage)"
+        return "\(specificSection)                            Avg: $ \(monthlyAverage)"
     }
 }
 
